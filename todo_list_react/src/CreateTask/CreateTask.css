@@ -1,0 +1,66 @@
+.create-task-container{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 400px;
+    min-height: 200px;
+    background-color: #5D76AB;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: 1px solid #77A1FC;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    &.show{
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+.create-task-container .title{
+    font-size: 50px;
+}
+.create-task-container .input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.create-task-container input{
+    padding: 10px;
+    outline: none;
+
+}
+.create-task-container .input-container span{
+    font-size: 0.8rem;
+    color: red;
+}
+.create-task-container .add-btn{
+    background-color:transparent;
+    cursor: pointer;
+    padding: 5px 25px;
+    border: 3px solid #77A1FC;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #77A1FC;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

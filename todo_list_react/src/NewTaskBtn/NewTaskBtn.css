@@ -1,0 +1,26 @@
+.button{
+    background-color: #5D76AB;
+    font-size: 50px;
+    border: 5px solid #77A1FC;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-shadow:  0 0 15px #77A1FC;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.button span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-65%);
+    -webkit-transform: translate(-50%,-65%);
+    -moz-transform: translate(-50%,-65%);
+    -ms-transform: translate(-50%,-65%);
+    -o-transform: translate(-50%,-65%);
+}
